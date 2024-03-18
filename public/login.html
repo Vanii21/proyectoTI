@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALVAWI MODA</title>
+    <link rel="stylesheet" href="/css/stylelogin.css" />
+    <link
+      rel="shortcut icon"
+      href="/img/pagina/logo_tienda.ico"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <section>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+              <form action="/registro" method="POST">
+                <h1>Crear Cuenta</h1>
+                <span>Resgistrate y comienza un nuevo mundo de moda</span>
+                <input type="text" name="txtNombre" placeholder="Nombre" />
+                <input type="text" name="txtUsuario" placeholder="usuario" />
+                <input type="email" name="txtEmail" placeholder="Email" />
+                <select id="selectDepartamento" name="selectOp">
+                  <option value="" selected disabled>Elije un Departamento</option>
+                  <option value="1">Guatemala</option>
+                  <option value="2">Peten</option>
+                  <option value="3">Solola</option>
+                  <option value="4">Huehuetenango</option>
+                </select>
+                <input type="password" name="txtPassword" placeholder="Password" />
+                <button>Registrarse</button>
+              </form>
+            </div>
+            <div class="form-container sign-in-container">
+              <form action="/usuario" method="POST">
+                <h1>Iniciar Sesión</h1>
+                <span>Inicia sesión con tu cuenta</span>
+                <input type="text" name="txtUsuario" placeholder="Usuario" required/>
+                <input type="password" name="txtPassword" placeholder="Contraseña" required/>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <button>Iniciar Sesión</button>
+              </form>
+            </div>
+            <div class="overlay-container">
+              <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                  <h1>¡Bienvenido a ALVAWI! </h1>
+                  <p>
+                      Para mantenerse conectado con nosotros, por favor inicia sesión con tu información personal.
+                  </p>
+                  <button class="ghost" id="signIn">Iniciar Sesión</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                  <h1>¡Hola, Amigo! Bienvenido de Nuevo</h1>
+                  <p>Ingresa tus datos personales y comienza la aventura con nuestra moda.</p>
+                  <button class="ghost" id="signUp">Registrarse</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+  </body>
+  <!-- Login -->
+  <script src="js/login.js"></script>
+</html>

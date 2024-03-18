@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALVAWI MODA</title>
+    <!-- Links de CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/img/pagina/logo_tienda.ico"
+      type="image/x-icon"
+    />
+    <!-- Caja de Iconos -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="nav container">
+        <!-- Menu Icon -->
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <!-- Logo -->
+        <a href="/" class="logo">ALVAWI MODA</a>
+        <!-- navbar -->
+        <div class="navbar">
+          <a href="#" class="nav-link">Mujeres</a>
+          <a href="#" class="nav-link">Hombres</a>
+          <a href="#" class="nav-link">Niños</a>
+          <a href="#" class="nav-link">Accesorios</a>
+        </div>
+        <div class="icon-home">
+          <!-- Cart Icon -->
+          <a href="/cart.html">
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantify="0"></i>
+          </a>
+          <!-- Login Icon -->
+          <a href="/login">
+            <i class="bx bx-user-circle" id="login-icon"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Cart -->
+    <section class="cart-container container">
+      <a href="/" class="back-homepage">
+        <i class="bx bx-chevron-left"></i>
+        <span>Agregar mas ropa</span>
+      </a>
+      <h2 class="cart-s-title">Carrito de Compras</h2>
+      <div class="cart-box">
+        <div class="cart-data">
+          <div id="cartItems"></div>
+        </div>
+        <div class="cart-t">
+          <div id="cartTotal"></div>
+          <a href="#" id="checkout-btn" class="checkout-btn">Finalizar Compra</a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- link to js -->
+  <script src="js/main.js"></script>
+  <script src="js/condiciones.js"></script>
+  <script src="js/menuResponsive.js"></script>
+</html>

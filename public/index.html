@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALVAWI MODA</title>
+    <!-- Links de CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/pagina/logo_tienda.ico" type="image/x-icon">
+    <!-- Caja de Iconos -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+          <!-- Menu Icon -->
+          <i class="bx bx-menu" id="menu-icon"></i>
+          <!-- Logo -->
+          <a href="/" class="logo">ALVAWI MODA</a>
+          <!-- navbar -->
+          <div class="navbar">
+            <a href="#" class="nav-link">Mujeres</a>
+            <a href="#" class="nav-link">Hombres</a>
+            <a href="#" class="nav-link">Niños</a>
+            <a href="#" class="nav-link">Accesorios</a>
+          </div>
+          <div class="icon-home">
+            <!-- Cart Icon -->
+            <a href="/cart.html">
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantify="0"></i>
+            </a>
+            <!-- Login Icon -->
+            <div class="dropdown">
+              <a href="/login" class="dropdown-toggle">
+                  <i class='bx bx-user-circle' id="login-icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="/logout">CERRAR SESION</a></li>
+              </ul>
+          </div>
+          </div>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-img container">
+        <img src="/img/pagina/home.png" alt="poster" />
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products container" id="products">
+      <!-- Heading -->
+      <h2 class="heading">Descubrir Producto</h2>
+      <!-- Products Container -->
+      <div class="product-container" id="productList"></div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <div class="footer-c containter">
+          <div class="footer-box">
+            <h2>AlVAWI</h2>
+            <div class="social">
+              <a href="#"><i class='bx bxl-pinterest-alt'></i></a>
+              <a href="#"><i class='bx bxl-instagram' ></i></a>
+              <a href="#"><i class='bx bxl-meta' ></i></a>
+              <a href="#"><i class='bx bxl-tiktok' ></i></i></a>
+              <a href="#"><i class='bx bxl-twitter' ></i></i></a>
+              <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+          </div>
+          <div class="footer-box">
+            <h3>Ayuda</h3>
+            <a href="#">Contactanos</a>
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Envio</a>
+            <a href="#">Pago</a>
+            <a href="#">Seguir tu pedido</a>
+            <a href="#">Devolver tu pedido</a>
+          </div>
+          <div class="footer-box">
+            <h3>Informacion Legal</h3>
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Terminos y Condiciones</a>
+            <a href="#">Politica de devolucion</a>
+            <a href="#">Comunidad</a>
+            <a href="#">Obtener Tarjeta</a>
+          </div>
+        </div>
+        <p class="copyright container">&#169 AlVAWI MODA v.A.W.</p>
+    </div>
+
+  </body>
+  <!-- link to js -->
+  <script src="js/main.js"></script>
+  <script src="js/menuResponsive.js"></script>
+</html>
